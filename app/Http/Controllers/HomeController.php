@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function home(){
-    	return view('home');
+    	return view('home.home');
     }
     public function about(){
-    	return view('about');
+    	return view('home.about');
     }
     public function contact(){
-    	return view('contact');
+    	return view('home.contact');
     }
     public function ihza(){
         return 'Ihza';
@@ -21,6 +21,9 @@ class HomeController extends Controller
     public function yuyun(){
         return 'yuyun';
     }
+    public function produk(){
+        return view('home.index');
+        }
 }
 
 ?>
